@@ -1,15 +1,178 @@
 <!doctype html>
 <html>
-<head>
+	<head>
+		<meta charset="utf-8">
+		<title>My love for Git</title>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<style>
+			@import url('http://fonts.googleapis.com/css?family=Work+Sans');
+			body {
+				background: url('https://images.unsplash.com/photo-1431492299426-2ea1ce429cc0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=135705633ad6367a0565fceae4a57372') no-repeat center center fixed;
+				background-size: cover;
+				font-family: Work Sans, sans-serif;
+			}
+			#container {
+				width: 500px;
+				/*height: 600px;*/
+				margin: 80px auto;
+				/*background: rgba(255, 255, 255, 0.4);*/
+				background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(255, 255, 255, 0.5));
+				padding: 25px;
+				color: #333333;
+				font-size: 26px;
+				line-height: 38px;
+				position: relative;
+			}
+			.bar {
+				background: #267AAD;
+				/*opacity: 0.7;*/
+				width: 90%;
+				height: 12px;
+				position: absolute;
+				right: 5%;
+			}
+			#one { top: 39px; }
+			#two { top: 77px; }
+			#three { top: 115px; }
+			#four { top: 153px; }
+			#five { top: 191px; }
+			#six { top: 229px; }
+			#seven { top: 267px; }
+			#eight { top: 305px; }
+			#nine { top: 343px; }
+			#ten { top: 381px; }
+			#eleven { top: 419px; }
+			#twelve { top: 457px; }
+			#ball {
+				background: white;
+				height: 10px;
+				width: 10px;
+				border-radius: 5px;
+				position: absolute;
+				top: -5px;
+				left: -5px;
+				-webkit-animation: ball 8s infinite;
+				-moz-animation: ball 8s infinite;
+				-ms-animation: ball 8s infinite;
+				-o-animation: ball 8s infinite;
+				animation: ball 8s infinite;
+			}
+			@-webkit-keyframes ball {
+				/*0% { top: -5px; left: -5px; }*/
+				25% { left: 545px; top: -5px; }
+				50% { left: 545px; top: 500px; }
+				75% { left: -5px; top: 500px; }
+				100% { left: -5px; top: -5px; }
+			}
+		</style>
+	</head>
 
-	<title>Love letter to Git</title>
-	<meta charset="utf-8">
+	<body>
 
-</head>
+		<section id="container">
+			Look Git, I love ya, ok?  You know you're cool.  I ain't gonna write home to mama bout you or
+			put ya in my diary, but I love ya.  Some dude that's probably dead now figured we didn't have
+			to roll the dice on losing a week's worth of work every time we clicked save, and I appreciate
+			the heck outta him for taking action.  You keep doing you, I'll keep doing me, and we'll both
+			get home in time for supper, sound good?
 
-<body>
-	<header>
-		<h1>My love for git.</h1>
-	</header>
-</body>
+			<div class="bar" id="one"></div>
+			<div class="bar" id="two"></div>
+			<div class="bar" id="three"></div>
+			<div class="bar" id="four"></div>
+			<div class="bar" id="five"></div>
+			<div class="bar" id="six"></div>
+			<div class="bar" id="seven"></div>
+			<div class="bar" id="eight"></div>
+			<div class="bar" id="nine"></div>
+			<div class="bar" id="ten"></div>
+			<div class="bar" id="eleven"></div>
+			<div class="bar" id="twelve"></div>
+
+			<div id="ball"></div>  
+		</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script>
+	$(document).ready(function() {
+
+		var i = 0;
+
+		$('#one').animate({
+			width: '0px',
+			opacity: 0.5
+		}, 2000, 'easeOutCubic', function() {
+
+			$('#two').animate({
+				width: '0px',
+				opacity: 0.5
+			}, 2000, 'easeOutCubic', function() {
+
+				$('#three').animate({
+					width: '0px',
+					opacity: 0.5
+				}, 2000, 'easeOutCubic', function() {
+
+					$('#four').animate({
+						width: '0px',
+						opacity: 0.5
+					}, 2000, 'easeOutCubic', function() {
+
+						$('#five').animate({
+							width: '0px',
+							opacity: 0.5
+						}, 2000, 'easeOutCubic', function() {
+
+							$('#six').animate({
+								width: '0px',
+								opacity: 0.5
+							}, 2000, 'easeOutCubic', function() {
+
+								$('#seven').animate({
+									width: '0px',
+									opacity: 0.5
+								}, 2000, 'easeOutCubic', function() {
+
+									$('#eight').animate({
+										width: '0px',
+										opacity: 0.5
+									}, 2000, 'easeOutCubic', function() {
+
+										$('#nine').animate({
+											width: '0px',
+											opacity: 0.5
+										}, 2000, 'easeOutCubic', function() {
+
+											$('#ten').animate({
+												width: '0px',
+												opacity: 0.5
+											}, 2000, 'easeOutCubic', function() {
+
+												$('#eleven').animate({
+													width: '0px',
+													opacity: 0.5
+												}, 2000, 'easeOutCubic', function() {
+
+													$('#twelve').animate({
+														width: '0px',
+														opacity: 0.5
+													}, 2000, 'easeOutCubic');
+
+												});
+											});
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			});
+		});
+
+	});
+	</script>
+	</body>
+
 </html>
