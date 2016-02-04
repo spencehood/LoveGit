@@ -43,7 +43,7 @@
 			#ten { top: 381px; }
 			#eleven { top: 419px; }
 			#twelve { top: 457px; }
-			#ball {
+			.ball {
 				background: white;
 				height: 10px;
 				width: 10px;
@@ -58,11 +58,22 @@
 				animation: ball 8s infinite;
 			}
 			@-webkit-keyframes ball {
-				/*0% { top: -5px; left: -5px; }*/
 				25% { left: 545px; top: -5px; }
 				50% { left: 545px; top: 500px; }
 				75% { left: -5px; top: 500px; }
 				100% { left: -5px; top: -5px; }
+			}
+			#ball2 {
+				-webkit-animation: ball 8s infinite;
+				-webkit-animation-delay: 2s;
+			}
+			#ball3 {
+				-webkit-animation: ball 8s infinite;
+				-webkit-animation-delay: 4s;
+			}
+			#ball4 {
+				-webkit-animation: ball 8s infinite;
+				-webkit-animation-delay: 6s;
 			}
 		</style>
 	</head>
@@ -89,7 +100,10 @@
 			<div class="bar" id="eleven"></div>
 			<div class="bar" id="twelve"></div>
 
-			<div id="ball"></div>  
+			<div class="ball" id="ball1"></div>
+			<div class="ball" id="ball2"></div>
+			<div class="ball" id="ball3"></div> 
+			<div class="ball" id="ball4"></div>   
 		</section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
